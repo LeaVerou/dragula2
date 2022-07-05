@@ -1,7 +1,7 @@
-'use strict';
 
-import test from "./lib/base.js";
-import dragula from "../dragula.js";
+
+import test from './lib/base.js';
+import {dragula} from '../src/dragula.js';
 
 test('drake has sensible default options', function (t) {
   var options = dragula({}).options;

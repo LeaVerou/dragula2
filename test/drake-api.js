@@ -1,7 +1,7 @@
-'use strict';
 
-import test from "./lib/base.js";
-import dragula from "../../dragula.js";
+
+import test from './lib/base.js';
+import {dragula} from '../src/dragula.js';
 
 test('drake can be instantiated without throwing', function (t) {
   t.doesNotThrow(drakeFactory, 'calling dragula() without arguments does not throw');

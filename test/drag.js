@@ -1,7 +1,7 @@
-'use strict';
 
-import test, {events} from "./lib/base.js";
-import dragula from "../dragula.js";
+
+import test, {events} from './lib/base.js';
+import {dragula} from '../src/dragula.js';
 
 describe('drag event gets emitted when clicking an item', function () {
   testCase('works for left clicks', { which: 1 });

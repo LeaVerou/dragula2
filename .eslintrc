@@ -4,12 +4,13 @@
 		"es2021": true,
 		"node": true
 	},
-	"parser": "@babel/eslint-parser",
+  "parser": "@babel/eslint-parser",
 	"parserOptions": {
+    "requireConfigFile": false,
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-    "rules": {
+  "rules": {
 		"curly": 1,
 		"eqeqeq": 1,
 		"new-cap": 1,

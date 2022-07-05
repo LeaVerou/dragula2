@@ -1,7 +1,7 @@
-'use strict';
 
-import test from "./lib/base.js";
-import dragula from "../dragula.js";
+
+import test from './lib/base.js';
+import {dragula} from '../src/dragula.js';
 
 test('drake defaults to no containers', function (t) {
   var drake = dragula();

@@ -12,9 +12,10 @@
     "start": "watchify -dvo example/example.js & rollup -c --watch",
     "styles": "cp dragula.css dist/dragula.css && cleancss dist/dragula.css -o dist/dragula.min.css",
     "sync": "git checkout gh-pages ; git merge master ; git push ; git checkout master",
-    "lint": "jshint . --reporter node_modules/jshint-stylish/index.js",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
     "test": "wtr test/*.js --node-resolve",
-    "test-watch": "hihat test/*.js -p tap-dev-tool"
+    "test:watch": "web-test-runner test/*.js --node-resolve --watch"
   },
   "repository": {
     "type": "git",
@@ -27,16 +28,15 @@
   },
   "homepage": "https://github.com/bevacqua/dragula",
   "devDependencies": {
-    "@esm-bundle/chai": "^4.3.4-fix.0",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@web/test-runner": "^0.13.20",
-    "clean-css": "4.2.3",
-    "clean-css-cli": "^4.3.0",
-    "hihat": "2.6.4",
-    "jshint": "^2",
-    "jshint-stylish": "2.2.1",
-    "rollup": "^2.58.3",
+    "@babel/eslint-parser": "^7.18.2",
+    "@esm-bundle/chai": "^4.3.4",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@web/test-runner": "^0.13.31",
+    "clean-css": "^5.3.0",
+    "clean-css-cli": "^5.6.0",
+    "eslint": "^8.19.0",
+    "rollup": "^2.75.7",
     "rollup-plugin-terser": "^7.0.2",
-    "watchify": "3.11.1"
+    "watchify": "^4.0.0"
   }
 }

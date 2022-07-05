@@ -1,7 +1,7 @@
-'use strict';
 
-import test, {events} from "./lib/base.js";
-import dragula from "../dragula.js";
+
+import test, {events} from './lib/base.js';
+import {dragula} from '../src/dragula.js';
 
 test('.start() emits "cloned" for copies', function (t) {
   var div = document.createElement('div');

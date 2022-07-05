@@ -1,7 +1,7 @@
-'use strict';
 
-import test, {events} from "./lib/base.js";
-import dragula from "../dragula.js";
+
+import test, {events} from './lib/base.js';
+import {dragula} from '../src/dragula.js';
 
 describe('remove does not throw when not dragging', function () {
   test('a single time', function once (st) {

@@ -1,7 +1,7 @@
-'use strict';
 
-import test from "./lib/base.js";
-import dragula from "../dragula.js";
+
+import test from './lib/base.js';
+import dragula from '../src/dragula.js';
 
 describe('cancel does not throw when not dragging', function () {
   test('a single time', function once (st) {
