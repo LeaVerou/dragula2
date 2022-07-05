@@ -1,4 +1,4 @@
-const documentElement = document.documentElement;
+const { documentElement } = document;
 
 export function getImmediateChild (dropTarget, target) {
   let immediate = target;

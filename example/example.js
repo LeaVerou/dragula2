@@ -1,4 +1,7 @@
-import dragula from "../src/dragula.js";
+import { dragula }  from "../src/dragula.js";
+
+// Also this works:
+// import dragula from "../dist/dragula.min.js";
 
 var sortable = $('sortable');
 

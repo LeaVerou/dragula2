@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/bevacqua/dragula",
   "devDependencies": {
+    "@babel/core": "^7.18.6",
     "@babel/eslint-parser": "^7.18.2",
     "@esm-bundle/chai": "^4.3.4",
     "@rollup/plugin-babel": "^5.3.1",
