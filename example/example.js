@@ -1,6 +1,4 @@
-'use strict';
-
-import dragula from "../dragula.js";
+import dragula from "../src/dragula.js";
 
 var sortable = $('sortable');
 
